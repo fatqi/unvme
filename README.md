@@ -98,7 +98,7 @@ nvidia@tegra-ubuntu:~$ dmesg | grep "to group"
 
 Device 0000:01:00.0 in above is my PCIe NVMe SSD, from this dmesg, we can know all of devices were attached to IOMMU domian in kernel initialization. So, I think that due to it already attached to IOMMU domain, so it cannot be assigned to SMMU domain in my userspace code. I'm not sure but looks like that from the kernel code debug (pls see above detail functions call trace) 
 
-3.My test case is based on Micron UNVMe Driver https://github.com/MicronSSD/unvme, I did lots of modification in order to adapt my NVMe SSD firmware, but the code of VFIO part are same, and also same with above vfio-host-test project main() function, you can check these two code, and also can build it to test. You need comment the "asm rdtsc" in rdtsc.h in unvme project at first, and then it can build success in ARM architechture.
+3.My userspace code is based on Micron UNVMe Driver https://github.com/MicronSSD/unvme, I did lots of modification in order to adapt my NVMe SSD firmware, but the code of VFIO part are same, and also same with above vfio-host-test project main() function, you can check these two code, and also can build it to test. You need comment the "asm rdtsc" in rdtsc.h in unvme project at first, and then it can build success in ARM architechture.
 
 Now all of my jobs are suspended by this issue, I really need your help, thank you! I appreciate your help very much!
 
