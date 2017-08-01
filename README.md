@@ -1,6 +1,8 @@
 # unvme
 Dear Eric,
 
+Oh! I'm so glad to recieved your response about my question, thank you very much!
+
 I used a usersapce PCIe device driver in order to communicate with my PCIe storage device (NVMe SSD) bypass the OS kernel, it can reduce lost of SW overhead in kernel especially in block layer.
 
 The userspace code is working well in X86 architechture, and the preconditions in X86 are: 1) CPU support VT-d (Virtualization Technology for Directed I/O), 2) Enable VFIO and IOMMU in kernel config. Now I'm trying to make the userspace code support ARM architechture, and then I faced above issue.
@@ -100,4 +102,7 @@ Device 0000:01:00.0 in above is my PCIe NVMe SSD, from this dmesg, we can know a
 
 Now all of my jobs are suspended by this issue, I really need your help, thank you! I appreciate your help very much!
 
-Now all of my jobs are suspended by this issue, I really need Nvidia's help, thank you!
+Best Regards,
+Qi
+
+
